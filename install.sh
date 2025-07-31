@@ -100,7 +100,7 @@ fi
 
 install_base() {
     case "${release}" in
-    centos | almalinux | rocky | oracle)
+    centos | almalinux | rocky | oracle | ol)
         yum -y update && yum install -y -q wget curl tar tzdata
         ;;
     fedora)
